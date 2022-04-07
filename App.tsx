@@ -16,6 +16,7 @@ function App() {
         <Text>Hello World</Text>
       </Profile>
       <MessageForm />
+      <Text>ddd</Text>
     </View>
   );
 }

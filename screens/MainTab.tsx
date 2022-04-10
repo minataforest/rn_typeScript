@@ -6,7 +6,10 @@ import MateralIcons from 'react-native-vector-icons/MaterialIcons';
 import {useQuery} from 'react-query';
 
 function Sample(id) {
-  const result = useQuery('articles', getArticles);
+  const result = useQuery('articles', getArticles, {
+    enabled: true,
+    refetchOnMount: true,
+  });
   const {data, error, isLoading} = result;
 
   if (isLoading) return <Text>로딩 중</Text>;

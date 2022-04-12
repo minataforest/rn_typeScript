@@ -10,7 +10,7 @@ export interface User {
   updated_at: string;
 }
 
-export interface Articles {
+export interface Article {
   id: number;
   title: string;
   body: string;
